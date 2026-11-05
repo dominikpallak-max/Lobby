@@ -15,8 +15,12 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      # Ta akcja instaluje Gradle automatycznie, więc nie potrzebujesz pliku gradlew
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle build
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
