@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "askalki",
+  "version": "${version}",
+  "name": "Askalki",
+  "description": "Niestandardowy mod klienta dla Askalki.",
+  "authors": [
+    "jestemsigmaelo"
+  ],
+  "contact": {
+    "sources": "https://github.com/"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "pl.askalki.AskalkiClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  }
+}
