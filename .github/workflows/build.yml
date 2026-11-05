@@ -28,3 +28,4 @@ jobs:
         with:
           name: askalki-jar
           path: build/libs/
+          
